@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialog">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/shapex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="Result"
+            android:textAlignment="center"
+            android:textColor="#EFEEEE"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/cwu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/winner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="Correct"
+                android:textColor="#03C606"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wrong"
+                android:textColor="#830404"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Unanswered"
+                android:textColor="#757575"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cwu"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#03C606"
+                android:textSize="45sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="/"
+                android:textColor="#EEEEEE"
+                android:textSize="45sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#830404"
+                android:textSize="45sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="/"
+                android:textColor="#EEEEEE"
+                android:textSize="45sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/unanswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#757575"
+                android:textSize="45sp"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/menu"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="205dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_answer"
+            android:backgroundTint="#EFEEEE"
+            android:clickable="true"
+            android:text="≡"
+            android:textColor="#172D5C"
+            android:textSize="42sp"
+            app:cornerRadius="24dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restart"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_answer"
+            android:backgroundTint="#EFEEEE"
+            android:clickable="true"
+            android:text="↻"
+            android:textColor="#172D5C"
+            android:textSize="42sp"
+            app:cornerRadius="24dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/home"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_answer"
+            android:backgroundTint="#EFEEEE"
+            android:clickable="true"
+            android:text="︎⏏︎︎"
+            android:textAlignment="center"
+            android:textColor="#172D5C"
+            android:textSize="42sp"
+            app:cornerRadius="24dp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
